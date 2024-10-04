@@ -1,0 +1,82 @@
+@use '../variables.scss' as *;
+
+.header {
+  margin-top: 30px;
+  margin-bottom: 45px;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 45px;
+  }
+
+  &__phone {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.4;
+    color: #333;
+    text-align: right;
+
+    &--text {
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 1.33333;
+      color: $deep-blue;
+    }
+  }
+
+  &__contacts {
+    display: flex;
+    gap: 38px;
+    align-items: center;
+  }
+
+  &__btn {
+    width: 200px;
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  min-width: 335px;
+  gap: 20px;
+
+
+  &__text {
+    color: $dark;
+  }
+
+  &__text--name {
+    font-weight: 600;
+    font-size: 20px;
+    // line-height: 1.9;
+  }
+
+  &__text--subtext {
+    font-weight: 300;
+    font-size: 12px;
+    // line-height: 1.5;
+  }
+}
+.menu {
+  &__list {
+    display: flex;
+    height: 60px;
+    // max-width: 500px;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+  }
+
+  &__item {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.125;
+    color: #333;
+  }
+}
