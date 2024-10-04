@@ -1,5 +1,6 @@
-@use './variables.scss' as *;
+@use './fonts.scss' as *;
+@use './base.scss' as *;
 
-body {
-  background-color: $color-test;
-}
+@use './modules/_header' as *;
+
+@import 'normalize.css';
