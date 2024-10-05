@@ -1,4 +1,5 @@
 .result {
+  margin-bottom: 118px;
   .container {
     display: flex;
     flex-direction: row;
@@ -7,6 +8,7 @@
 
   &__photos {
     display: flex;
+    align-items: end;
   }
 
   &__photo--before {
