@@ -1,0 +1,60 @@
+@use '../_variables.scss' as *;
+@use '../_base.scss' as *;
+
+.discount {
+  .container {
+    background-image: url('/public/img/lidgen.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 60px;
+    padding-bottom: 75px;
+    padding-left: 18%;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.4;
+    color: $dark;
+    margin-bottom: 15px;
+  }
+
+  &__info {
+    display: flex;
+    gap: 60px;
+    margin-bottom: 40px;
+  }
+
+  &__text {
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 1.2;
+    color: $dark;
+  }
+
+  &__timer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    line-height: 1.28;
+    color: #fff;
+    border: 0.69px solid #fff;
+    width: 170px;
+    height: 86px;
+  }
+
+  &__timer--text {
+  }
+
+  &__timer--time {
+    font-size: 38px;
+    line-height: 1.09091;
+  }
+
+  &__btn::before {
+    content: url('/public/img/check_circle--discount.svg');
+    margin-right: 10px;
+  }
+}

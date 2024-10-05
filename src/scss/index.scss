@@ -3,5 +3,7 @@
 
 @use './modules/_header' as *;
 @use './modules/_main' as *;
+@use './modules/_result' as *;
+@use './modules/_discount' as *;
 
 @import 'normalize.css';
