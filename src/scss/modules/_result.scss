@@ -1,0 +1,92 @@
+.result {
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__photos {
+    display: flex;
+  }
+
+  &__photo--before {
+    position: relative;
+    &::before {
+      content: 'ДО';
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      top: 55px;
+      left: 67px;
+      font-size: 15px;
+      line-height: 1.5;
+      box-shadow: 0 4px 20px 6px rgba(127, 127, 127, 0.15);
+      background: linear-gradient(201deg, #33b7ef 0%, #6ae8d1 100%);
+      color: #fff;
+      width: 80px;
+      height: 40px;
+      border-radius: 0 20% 20% 0;
+    }
+  }
+
+  &__photo--after {
+    position: relative;
+    &::after {
+      content: 'ПОСЛЕ';
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      bottom: 35px;
+      right: 0;
+      font-size: 15px;
+      line-height: 1.5;
+      box-shadow: 0 4px 20px 6px rgba(127, 127, 127, 0.15);
+      background: linear-gradient(201deg, #33b7ef 0%, #6ae8d1 100%);
+      color: #fff;
+      width: 80px;
+      height: 40px;
+      border-radius: 20% 0 0 20%;
+      text-transform: uppercase;
+    }
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 1.2;
+    margin-bottom: 30px;
+  }
+
+  &__description {
+    font-size: 15px;
+    line-height: 1.46667;
+    max-width: 680px;
+    margin-bottom: 60px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  &__item {
+    margin-left: 32px;
+    font-weight: 500;
+    line-height: 1.5625;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 5px;
+      left: -30px;
+      background: linear-gradient(180deg, #33b7ef 0%, #6ae8d1 100%);
+      width: 15px;
+      height: 15px;
+      border-radius: 100%;
+    }
+  }
+}
