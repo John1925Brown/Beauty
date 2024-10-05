@@ -1,0 +1,43 @@
+@use '../_variables.scss' as *;
+
+.advantages {
+  margin-bottom: 90px;
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 60px 75px;
+    justify-items: center;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 1.2;
+    margin-bottom: 95px;
+  }
+}
+
+.advantage {
+  display: flex;
+  gap: 20px;
+
+  &__img {
+    min-width: 150px;
+  }
+
+  &__text {
+    min-width: 220px;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.4;
+  }
+
+  &__description {
+    font-size: 15px;
+    line-height: 1.46667;
+  }
+}
