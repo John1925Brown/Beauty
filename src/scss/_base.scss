@@ -83,31 +83,30 @@ iframe {
   margin: 0 auto;
 }
 
-.btn {
-  &--blue {
-    font-weight: 700;
-    font-size: 15px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #fff;
-    border-radius: 10px;
-    width: 310px;
-    height: 50px;
-    box-shadow: 0 4px 20px 6px rgba(127, 127, 127, 0.15);
-    background: linear-gradient(201deg, #33b7ef 0%, #6ae8d1 100%);
-  }
+.btn--blue,
+.link--blue {
+  font-weight: 700;
+  font-size: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 10px;
+  width: 310px;
+  height: 50px;
+  box-shadow: 0 4px 20px 6px rgba(127, 127, 127, 0.15);
+  background: linear-gradient(201deg, #33b7ef 0%, #6ae8d1 100%);
+}
 
-  &__white {
-    border-radius: 10px;
-    width: 310px;
-    height: 50px;
-    font-weight: 700;
-    font-size: 15px;
-    line-height: 1.33333;
-    text-transform: uppercase;
-    text-align: center;
-    color: $deep-blue;
-    background: #fff;
-    box-shadow: 0 4px 20px 6px rgba(254, 251, 251, 0.34);
-  }
+.btn--white {
+  border-radius: 10px;
+  width: 310px;
+  height: 50px;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 1.33333;
+  text-transform: uppercase;
+  text-align: center;
+  color: $deep-blue;
+  background: #fff;
+  box-shadow: 0 4px 20px 6px rgba(254, 251, 251, 0.34);
 }

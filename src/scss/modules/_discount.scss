@@ -2,8 +2,10 @@
 @use '../_base.scss' as *;
 
 .discount {
+  margin-bottom: 75px;
+
   .container {
-    background-image: url('/public/img/lidgen.svg');
+    background-image: url('/public/img/discount-bg.svg');
     background-repeat: no-repeat;
     background-position: center;
     padding-top: 60px;
@@ -43,9 +45,6 @@
     border: 0.69px solid #fff;
     width: 170px;
     height: 86px;
-  }
-
-  &__timer--text {
   }
 
   &__timer--time {
