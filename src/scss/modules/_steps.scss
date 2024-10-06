@@ -1,0 +1,76 @@
+@use '../_variables.scss' as *;
+@use '../_base.scss' as *;
+
+.steps {
+  margin-bottom: 110px;
+  position: relative;
+
+  &__title {
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 1.2;
+    color: #fff;
+    text-shadow: 0 4px 60px 0 rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 70px;
+    left: 190px;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 4px 60px 0 rgba(0, 0, 0, 0.1);
+    background: #fff;
+  }
+
+  &__list {
+    padding: 70px;
+
+    display: grid;
+
+    grid-template-columns: auto 1fr;
+    gap: 50px 40px;
+  }
+}
+
+.step {
+  display: flex;
+  gap: 40px;
+
+  &__number {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: right;
+    color: $deep-blue;
+    max-width: 130px;
+    justify-self: end;
+
+    &::before {
+      content: url('/public/img/Steps-dot.svg');
+      margin-right: 12px;
+    }
+
+    &--bold {
+      font-weight: 700;
+    }
+  }
+
+  &__info {
+    max-width: 340px;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 22px;
+  }
+
+  &__description {
+    font-size: 15px;
+    line-height: 1.46667;
+    &--link {
+      color: $deep-blue;
+    }
+  }
+}
