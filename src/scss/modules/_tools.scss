@@ -1,0 +1,42 @@
+.tools {
+  margin-bottom: 75px;
+  &__title {
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 1.2;
+    margin-bottom: 35px;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.tool {
+  display: flex;
+  max-width: 50%;
+  gap: 30px;
+  margin-bottom: 40px;
+
+  &__img {
+    img {
+      min-width: 200px;
+      min-height: 100%;
+    }
+  }
+
+  &__info {
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.4;
+  }
+
+  &__description {
+    font-size: 15px;
+    line-height: 1.46667;
+  }
+}
