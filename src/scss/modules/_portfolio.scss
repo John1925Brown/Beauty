@@ -1,0 +1,39 @@
+@use '../_variables.scss' as *;
+
+.portfolio {
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 65px;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 1.2;
+  }
+
+  &__link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.66667;
+    color: $deep-blue;
+
+    &::after {
+      content: url('/public/img/portfolio/Arrow.svg');
+      margin-left: 20px;
+    }
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-bottom: 140px;
+  }
+}
+
+.portfolio__wrapper > img:nth-child(4n + 1),
+.portfolio__wrapper > img:nth-child(4n + 3) {
+  transform: translateY(140px);
+}
