@@ -1,0 +1,38 @@
+.subscribe {
+  margin-bottom: 80px;
+
+  .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  &__info {
+    max-width: 600px;
+  }
+
+  &__text {
+    font-size: 15px;
+    line-height: 1.46667;
+    margin-bottom: 60px;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 1.2;
+    margin-bottom: 30px;
+  }
+
+  &__btns {
+    display: flex;
+  }
+
+  &__btn--vk {
+    width: 207px;
+    margin-right: 45px;
+  }
+  &__btn--instagram {
+    width: 207px;
+  }
+}
