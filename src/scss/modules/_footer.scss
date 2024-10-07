@@ -1,0 +1,120 @@
+.footer {
+  background-color: #3c444c;
+  padding-top: 60px;
+
+  &__main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 70px;
+  }
+
+  &__logo {
+    display: flex;
+    gap: 20px;
+  }
+
+  &__img {
+  }
+
+  &__name {
+    color: #fff;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.9;
+  }
+
+  &__profession {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  &__btn {
+    color: #333;
+    background: linear-gradient(
+      to right,
+      #afe7ff 0%,
+      #e5f8ff 0%,
+      #e0fff9 100%,
+      #e4fffa 100%
+    );
+    transform: translateX(-20%);
+
+    &::before {
+      content: url('/public/img/footer/footer-check.svg');
+      margin-right: 15px;
+    }
+  }
+
+  &__contacts {
+  }
+
+  &__number {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.4;
+    color: #fff;
+    margin-bottom: 15px;
+  }
+
+  &__communication {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  &__communication--viber {
+  }
+
+  &__communication--whatsapp {
+  }
+
+  &__communication--telegram {
+  }
+
+  &__communication--instagram {
+  }
+
+  &__communication--vk {
+  }
+
+  &__bottom {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &::before {
+      content: '';
+      width: 100vw;
+      height: 1px;
+      background-color: #fff;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  &__slogan {
+    color: #fff;
+
+    & span {
+      font-weight: 700;
+      font-size: 15px;
+    }
+  }
+
+  &__copyright {
+    line-height: 1.57143;
+    color: #cbcfd4;
+  }
+}
