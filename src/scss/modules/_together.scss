@@ -1,0 +1,97 @@
+@use '../_variables.scss' as *;
+
+.together {
+  & .container {
+    margin-bottom: 75px;
+  }
+
+  &__img img {
+    height: 100%;
+  }
+
+  &__wrapper {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(to bottom, #33b7ef, #6ae8d1);
+  }
+
+  &__text-wrapper {
+    padding-top: 60px;
+    padding-bottom: 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 110px;
+    max-width: 380px;
+  }
+
+  &__subtitle {
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 1.2;
+    margin-bottom: 15px;
+  }
+
+  &__description {
+    font-size: 15px;
+    line-height: 1.46667;
+    margin-bottom: 45px;
+    max-width: 420px;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    max-width: 380px;
+
+    & input::placeholder {
+      color: $line;
+    }
+  }
+
+  & input {
+    height: 40px;
+    box-shadow: 0 4px 20px 6px rgba(127, 127, 127, 0.15);
+    background: #fff;
+    width: 100%;
+    font-weight: 500;
+    font-size: 15px;
+    border-radius: 5px;
+    border: none;
+  }
+
+  &__input--name {
+    margin-bottom: 10px;
+  }
+
+  &__input--phone {
+    margin-bottom: 45px;
+  }
+
+  &__agreement {
+    font-size: 12px;
+    line-height: 1.5;
+    max-width: 370px;
+    color: #fff;
+    color: black;
+  }
+
+  &__agreement-link {
+    text-decoration: underline;
+  }
+}
+
+.form {
+  &__btn {
+    box-shadow: 0 4px 20px 6px rgba(127, 127, 127, 0.15);
+    width: 380px;
+    margin-bottom: 10px;
+  }
+}
