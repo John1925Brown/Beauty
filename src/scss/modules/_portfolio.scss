@@ -1,11 +1,13 @@
 @use '../_variables.scss' as *;
 
 .portfolio {
+  margin-bottom: 65px;
+
   &__header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 65px;
+    margin-bottom: 60px;
   }
 
   &__title {
