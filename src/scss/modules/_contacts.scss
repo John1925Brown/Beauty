@@ -1,0 +1,117 @@
+.contacts {
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__info {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5625;
+    margin-left: 40px;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 1.2;
+    margin-bottom: 60px;
+    transform: translateX(-40px);
+  }
+
+  &__working-hours--time {
+    font-size: 15px;
+    line-height: 1.46667;
+    margin-bottom: 35px;
+  }
+
+  &__working-hours--text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5625;
+    margin-bottom: 10px;
+    position: relative;
+  }
+
+  &__working-hours--text::before {
+    content: url('/public/img/contacts/contacts-clock.svg');
+    position: absolute;
+    top: 0;
+    left: -40px;
+  }
+
+  &__adres {
+    margin-bottom: 20px;
+    position: relative;
+
+    &::before {
+      content: url('/public/img/contacts/contacts-map.svg');
+      position: absolute;
+      top: 0;
+      left: -40px;
+    }
+  }
+
+  &__phone {
+    margin-bottom: 20px;
+    position: relative;
+
+    &::before {
+      content: url('/public/img/contacts/contacts-phone.svg');
+      position: absolute;
+      top: 0;
+      left: -40px;
+    }
+  }
+
+  &__email {
+    margin-bottom: 20px;
+    position: relative;
+
+    &::before {
+      content: url('/public/img/contacts/contacts-email.svg');
+      position: absolute;
+      top: 0;
+      left: -40px;
+    }
+  }
+
+  &__phone--sms {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    position: relative;
+
+    &::before {
+      content: url('/public/img/contacts/contacts-phone-sms.svg');
+      position: absolute;
+      top: 0;
+      left: -40px;
+    }
+
+    & img {
+      display: inline-block;
+    }
+  }
+
+  &__phone--viber {
+    margin-left: 20px;
+    margin-right: 10px;
+  }
+
+  &__phone--whatsapp {
+    margin-right: 10px;
+  }
+
+  &__rating {
+    margin-bottom: 40px;
+    transform: translateX(-40px);
+  }
+
+  &__map {
+    margin-right: 60px;
+    width: 60%;
+    height: 608px;
+  }
+}
