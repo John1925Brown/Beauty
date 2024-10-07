@@ -1,0 +1,68 @@
+@use '../_variables.scss' as *;
+
+.media {
+  margin-bottom: 100px;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 1.2;
+  }
+
+  &__nav-btn--right {
+    margin-left: 15px;
+  }
+
+  &__text {
+    font-size: 15px;
+    line-height: 1.46667;
+    max-width: 574px;
+  }
+
+  &__list {
+    display: flex;
+    gap: 50px;
+  }
+}
+
+.servise {
+  flex: 0 1 25%;
+  display: flex;
+  flex-direction: column;
+
+  &__img {
+    margin-bottom: 15px;
+  }
+
+  &__description {
+    font-size: 15px;
+    line-height: 1.46667;
+    flex-grow: 1;
+    margin-bottom: 30px;
+  }
+
+  &__link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.66667;
+    color: $deep-blue;
+
+    &::after {
+      content: url('/public/img/Arrow-right.svg');
+      margin-left: 20px;
+    }
+  }
+}
