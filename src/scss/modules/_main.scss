@@ -1,23 +1,24 @@
 .main {
   margin-bottom: 90px;
   background-color: #e0fff9;
-  background-image: url('/public/img/Hero.png');
+  background-image: url('/public/img/main/main-hero.png');
   background-repeat: no-repeat;
   background-position: 90% 0;
   border-radius: 0 0 0 80%;
 
   &__title {
     font-size: 40px;
+    font-weight: 700;
     line-height: 1.25;
     margin-bottom: 30px;
-    max-width: 770px;
+    max-width: 60%;
   }
 
   &__abilities {
     display: grid;
     grid-template-columns: 1fr 1fr;
 
-    gap: 90px;
+    gap: 20px 30px;
     max-width: 550px;
     margin-bottom: 30px;
   }
@@ -34,15 +35,105 @@
     font-size: 15px;
     line-height: 1.46667;
     margin-bottom: 30px;
-    max-width: 760px;
+    max-width: 60%;
   }
 
   &__btn {
     position: relative;
     margin-bottom: 70px;
+
     &::before {
-      content: url('/public/img/check_circle-main.svg');
+      content: url('/public/img/main/main-check_circle.svg');
       margin-right: 10px;
+    }
+  }
+
+  &__bottom {
+    display: none;
+  }
+}
+
+@media (max-width: 1260px) {
+  .main {
+    &__text {
+      max-width: 50%;
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  .main {
+    background-position: 110% 0;
+  }
+}
+
+@media (max-width: 1000px) {
+  .main {
+    background-position: 130% 0;
+
+    &__text {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 930px) {
+  .main {
+    background-position: 170% 0;
+  }
+}
+
+@media (max-width: 850px) {
+  .main {
+    &__title {
+      font-size: 28px;
+      line-height: 1.14286;
+      max-width: 70%;
+      margin-bottom: 50px;
+    }
+
+    &__abilities {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      margin-bottom: 50px;
+    }
+  }
+}
+
+@media (max-width: 930px) {
+  .main {
+    background-image: url('/public/img/main/main-hero-tablet.png');
+    background-position: right -290px top;
+
+    &__ability {
+      max-width: 240px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .main {
+    margin-bottom: 100px;
+
+    .container {
+      display: flex;
+      flex-direction: column;
+    }
+    &__bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+
+      & img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+
+    &__btn {
+      width: 80%;
+      align-self: center;
     }
   }
 }
