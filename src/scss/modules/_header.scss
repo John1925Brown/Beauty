@@ -75,9 +75,15 @@
     font-size: 16px;
     line-height: 1.125;
     color: #333;
+
+    &:hover {
+      opacity: 0.7;
+      transform: scale(1.1);
+      transition: transform 0.3s ease, opacity 0.3s ease;
+    }
   }
 
-  &__nav--tablet {
+  &__nav--second {
     display: none;
   }
 }

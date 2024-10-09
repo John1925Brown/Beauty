@@ -102,6 +102,11 @@ iframe {
   height: 50px;
   box-shadow: 0 4px 20px 6px rgba(127, 127, 127, 0.15);
   background: linear-gradient(201deg, #33b7ef 0%, #6ae8d1 100%);
+
+  &:hover {
+    opacity: 0.8;
+    transition: all 0.3s ease;
+  }
 }
 
 .btn--white {
