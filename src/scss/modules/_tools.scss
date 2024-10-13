@@ -1,10 +1,18 @@
 .tools {
   margin-bottom: 75px;
+
+  &__btns {
+    display: none;
+  }
+
+  &__header {
+    margin-bottom: 35px;
+  }
+
   &__title {
     font-weight: 700;
     font-size: 35px;
     line-height: 1.2;
-    margin-bottom: 35px;
   }
 
   &__list {
@@ -26,9 +34,6 @@
     }
   }
 
-  &__info {
-  }
-
   &__title {
     font-weight: 600;
     font-size: 20px;
@@ -38,5 +43,83 @@
   &__description {
     font-size: 15px;
     line-height: 1.46667;
+  }
+}
+
+@media (max-width: 1280px) {
+  .tool {
+    padding: 20px;
+
+    & img {
+      min-height: 0px;
+    }
+  }
+}
+
+@media (max-width: 1060px) {
+  .tools {
+    &__list {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .tool {
+    max-width: 100%;
+    align-items: center;
+    justify-content: space-around;
+
+    & > * {
+      max-width: 50%;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .tools {
+    margin-bottom: 60px;
+    
+    &__header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__title {
+      font-size: 25px;
+      line-height: 1.28;
+    }
+
+    &__btns {
+      display: flex;
+      gap: 20px;
+
+      & > * {
+        width: 19px;
+        height: 19px;
+      }
+    }
+  }
+
+  .tool {
+    display: none;
+    padding: 0;
+    flex-direction: column;
+    gap: 25px;
+
+    &__title {
+      margin: 0 0 20px 0;
+    }
+
+    &--active {
+      display: flex;
+      margin-bottom: 0;
+    }
+
+    &__info {
+      align-self: flex-start;
+      max-width: 100%;
+    }
   }
 }
