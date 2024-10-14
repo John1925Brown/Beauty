@@ -11,7 +11,7 @@
     <header class="header">
       <div class="container header__wrapper">
         <div class="logo">
-          <img src="public/img/eyebrow.svg" alt="logo" class="logo__img" />
+          <img src="public/img/header/header-logo.svg" alt="logo" class="logo__img" />
           <div class="logo__text">
             <p class="logo__text--name">Дарья Чухранина</p>
             <p class="logo__text--subtext">дипломированный татуаж-мастер</p>
@@ -25,6 +25,12 @@
             <li class="menu__item"><a href="#">Отзывы</a></li>
             <li class="menu__item"><a href="#">Контакты</a></li>
           </ul>
+          <div class="menu__nav--second">
+            <img class="menu__nav--phone" src="/public/img/header/header-phone.svg" alt="phone">
+            <div class="menu__burger">
+              <span></span>
+            </div>
+          </div>
         </nav>
         <div class="header__contacts">
           <div class="header__phone">
@@ -187,11 +193,15 @@
           индивидуальный подход.
         </p>
         <button class="main__btn btn--blue">записаться на прием</button>
+        <div class="main__bottom">
+          <img src="/public/img/main/main-rating-yelp.svg" alt="rating yelp" class="main__bottom--img">
+          <img src="/public/img/main/main-rating-zoon.svg" alt="rating zoon" class="main__bottom--img">
+        </div>
       </div>
     </main>
     <section class="result">
       <div class="container">
-        <div class="result__text">
+        <div class="result__wrapper">
           <h2 class="result__title">Результаты моей работы</h2>
           <p class="result__description">
             Виртуозно комбинирую различные технологии татуажа <br />
@@ -199,6 +209,14 @@
             Также использую гиппоалергенные материалы для всех типов кожных
             покровов.
           </p>
+          <div class="result__photos">
+            <div class="result__photo--before">
+              <img src="/public/img/result/result-left.jpg" alt="Photo before" />
+            </div>
+            <div class="result__photo--after">
+              <img src="/public/img/result/result-right.jpg" alt="Photo after" />
+            </div>
+          </div>
           <ul class="result__list">
             <li class="result__item">Перекрою ваш неудачный татуаж</li>
             <li class="result__item">Обновлю ваш старый татуаж</li>
@@ -211,14 +229,6 @@
               Безопасный и естественный татуаж на долго
             </li>
           </ul>
-        </div>
-        <div class="result__photos">
-          <div class="result__photo--before">
-            <img src="/public/img/result-left.jpg" alt="Photo before" />
-          </div>
-          <div class="result__photo--after">
-            <img src="/public/img/result-right.jpg" alt="Photo after" />
-          </div>
         </div>
       </div>
     </section>
@@ -240,11 +250,22 @@
     </section>
     <section class="services">
       <div class="container">
+        <div class="services__header">
+          <h2 class="services__title">Услуги</h2>
+          <div class="services__btns">
+            <button class="services__btn--left"><svg width="15" height="17" viewBox="0 0 15 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4.18235e-07 8.5L14.25 16.7272L14.25 0.272758L4.18235e-07 8.5Z" fill="#428DFF" />
+            </svg></button>
+            <button class="services__btn--right"><svg width="15" height="17" viewBox="0 0 15 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15 8.5L0.749999 16.7272L0.75 0.272758L15 8.5Z" fill="#428DFF" />
+            </svg></button>
+          </div>
+        </div>
         <div class="services__wrapper">
-          <div class="service">
+          <div class="service service--active">
             <div class="service__img">
               <img
-                src="/public/img/services-yebrows.svg"
+                src="/public/img/services/services-yebrows.svg"
                 alt="Eyebrow tattooing"
               />
             </div>
@@ -268,7 +289,7 @@
           </div>
           <div class="service service--reverse">
             <div class="service__img">
-              <img src="/public/img/services-eyelids.svg" alt="Eyelid tattoo" />
+              <img src="/public/img/services/services-eyelids.svg" alt="Eyelid tattoo" />
             </div>
             <div class="service__info">
               <h3 class="service__title">Татуаж век</h3>
@@ -293,7 +314,7 @@
           </div>
           <div class="service">
             <div class="service__img">
-              <img src="/public/img/services-lips.svg" alt="Lip tattoo" />
+              <img src="/public/img/services/services-lips.svg" alt="Lip tattoo" />
             </div>
             <div class="service__info">
               <h3 class="service__title">Татуаж губ</h3>
@@ -326,7 +347,7 @@
         <div class="advantages__wrapper">
           <div class="advantage">
             <div class="advantage__img">
-              <img src="/public/img/advantage-1.svg" alt="1" />
+              <img src="/public/img/advantages/advantage-1.svg" alt="1" />
             </div>
             <div class="advantage__text">
               <h4 class="advantage__title">Не больно</h4>
@@ -337,7 +358,7 @@
           </div>
           <div class="advantage">
             <div class="advantage__img">
-              <img class="testimg" src="/public/img/advantage-2.svg" alt="2" />
+              <img class="testimg" src="/public/img/advantages/advantage-2.svg" alt="2" />
             </div>
             <div class="advantage__text">
               <h4 class="advantage__title">Быстро заживает</h4>
@@ -349,7 +370,7 @@
           </div>
           <div class="advantage">
             <div class="advantage__img">
-              <img src="/public/img/advantage-3.svg" alt="3" />
+              <img src="/public/img/advantages/advantage-3.svg" alt="3" />
             </div>
             <div class="advantage__text">
               <h4 class="advantage__title">Надолго</h4>
@@ -360,7 +381,7 @@
           </div>
           <div class="advantage">
             <div class="advantage__img">
-              <img src="/public/img/advantage-4.svg" alt="4" />
+              <img src="/public/img/advantages/advantage-4.svg" alt="4" />
             </div>
             <div class="advantage__text">
               <h4 class="advantage__title">Надежно</h4>
@@ -371,7 +392,7 @@
           </div>
           <div class="advantage">
             <div class="advantage__img">
-              <img src="/public/img/advantage-5.svg" alt="5" />
+              <img src="/public/img/advantages/advantage-5.svg" alt="5" />
             </div>
             <div class="advantage__text">
               <h4 class="advantage__title">Эстетично</h4>
@@ -382,7 +403,7 @@
           </div>
           <div class="advantage">
             <div class="advantage__img">
-              <img src="/public/img/advantage-6.svg" alt="6" />
+              <img src="/public/img/advantages/advantage-6.svg" alt="6" />
             </div>
             <div class="advantage__text">
               <h4 class="advantage__title">Гипоаллергено</h4>
@@ -404,7 +425,7 @@
         <div class="steps__wrapper">
           <div class="steps__img">
             <img
-              src="/public/img/stages-steps.png"
+              src="/public/img/steps/steps-main.png"
               alt="Steps: Eyelid Tattoo Procedure"
             />
           </div>
@@ -423,6 +444,7 @@
                 >
               </p>
             </div>
+            <button class="step__btn--mobile btn--blue">записаться на прием!</button>
 
             <p class="step__number">
               ЭТАП<br />
@@ -467,12 +489,23 @@
     </section>
     <section class="tools">
       <div class="container">
-        <h2 class="tools__title">Что я использую в работе</h2>
+        <div class="tools__header">
+          <h2 class="tools__title">Что я использую в работе</h2>
+          <div class="tools__btns">
+            <button class="tools__btn--right"><svg width="15" height="17" viewBox="0 0 15 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4.18235e-07 8.5L14.25 16.7272L14.25 0.272758L4.18235e-07 8.5Z" fill="#428DFF" />
+            </svg></button>
+            <button class="tools__btn--left"><svg width="15" height="17" viewBox="0 0 15 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15 8.5L0.749999 16.7272L0.75 0.272758L15 8.5Z" fill="#428DFF" />
+            </svg></button>
+          </div>
+        </div>
+
         <ul class="tools__list">
-          <li class="tool">
+          <li class="tool tool--active">
             <div class="tool__img">
               <img
-                src="/public/img/tools-materials.jpg"
+                src="/public/img/tools/tools-materials.jpg"
                 alt="Sterile disposable materials"
               />
             </div>
@@ -487,7 +520,7 @@
           <li class="tool">
             <div class="tool__img">
               <img
-                src="/public/img/tools-paint.jpg"
+                src="/public/img/tools/tools-paint.jpg"
                 alt="Organic natural paint"
               />
             </div>
@@ -502,7 +535,7 @@
           </li>
           <li class="tool">
             <div class="tool__img">
-              <img src="/public/img/tools-symmetry.jpg" alt="Facial symmetry" />
+              <img src="/public/img/tools/tools-symmetry.jpg" alt="Facial symmetry" />
             </div>
             <div class="tool__info">
               <h4 class="tool__title">Симметрию лица</h4>
@@ -517,7 +550,7 @@
           <li class="tool">
             <div class="tool__img">
               <img
-                src="/public/img/tools-hypoallergenic.jpg"
+                src="/public/img/tools/tools-hypoallergenic.jpg"
                 alt="Hypoallergenic consumables"
               />
             </div>
@@ -544,7 +577,7 @@
           <img
             src="/public/img/portfolio/portfolio-1.jpg"
             alt="portfolio photo 1"
-            class="portfolio__img"
+            class="portfolio__img portfolio__img--active"
           />
           <img
             src="/public/img/portfolio/portfolio-2.jpg"
@@ -602,6 +635,7 @@
             class="portfolio__img"
           />
         </div>
+        <a href="#" class="portfolio__link portfolio__link--footer">Посмотреть все</a>
       </div>
     </section>
     <section class="together">
@@ -635,9 +669,10 @@
             </form>
             <p class="together__agreement">Нажимая на кнопку, вы соглашаетесь <a href="#" class="together__agreement-link">с условиями обработки персональных данных</a>.</p>
           </div>
-          <div class="together__img">
-            <img src="./public/img/together-photo.png" alt="Two girls" />
-          </div>
+          <picture class="together__img">
+            <source media="(max-width: 870px)" srcset="./public/img/together/together-photo-mobile.png">
+            <img src="./public/img/together/together-photo.png" alt="Two girls" />
+          </picture>
         </div>
       </div>
     </section>
@@ -658,7 +693,7 @@
           <a class="reviews__link">Посмотреть все</a>
         </div>
         <div class="reviews__wrapper">
-          <div class="review">
+          <div class="review review--active">
             <div class="review__img">
               <img src="/public/img/reviews/review-photo-1.jpg" alt="reviewer 1">
             </div>

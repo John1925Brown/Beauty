@@ -94,3 +94,65 @@
     flex: 0 1 20%;
   }
 }
+
+@media (max-width: 1250px) {
+  .review {
+    &__platform {
+      display: none;
+    }
+
+    &__subtitle {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 1170px) {
+  .reviews {
+    &__header {
+      display: block;
+    }
+  }
+  .review {
+    display: none;
+  }
+
+  .review--active {
+    display: flex;
+  }
+}
+
+@media (max-width: 680px) {
+  .reviews {
+    margin-bottom: 30px;
+
+    &__header {
+      margin-bottom: 40px;
+      max-width: 100%;
+    }
+
+    &__navigation {
+      justify-content: space-between;
+    }
+
+    &__link {
+      display: none;
+    }
+
+    &__title {
+      font-size: 25px;
+      line-height: 1.28;
+    }
+
+    &__wrapper {
+      margin-bottom: 0;
+      justify-content: start;
+    }
+  }
+
+  .review {
+    &__img {
+      display: none;
+    }
+  }
+}
